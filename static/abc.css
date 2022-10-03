@@ -1,0 +1,87 @@
+.inputbox{
+    width: 7.18%;
+    display: inline-block;
+}
+.newColumn{
+    display: inline-block;
+}
+.allbox{
+    width: 7.18%;
+    
+}
+.firstcontainer{
+    display: flex;
+    
+}
+.secondcontainer{
+    display: flex;
+    margin-top: 2rem;
+}
+.thirdcontainer{
+    display: flex;
+    
+}
+.navba{
+    color: #198754;
+}
+.toshow{
+    background-color: rgb(20, 20, 92);;
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+    width: 20rem;
+    pointer-events: none;
+}
+.fullcontainer{
+    display: flex;
+}
+.anscontainer{
+    width: 30rem;
+    height: 6rem;
+}
+.maincontainer{
+    
+}
+.secondcontainern{
+    display: flex;
+}
+.boxcontainer{
+    margin-left: 40rem;
+    margin-top: 3rem;
+    position: absolute;
+}
+.bot{
+    position:relative;
+    margin-left: 20%;
+    width: 10rem;
+    background-color: #0dcaf0;
+
+}
+.bhh{
+    margin-left: 40%;
+    
+    
+}
+.bth{
+    display: flex;
+    justify-content: center;
+    background-color: #0dcaf0;
+
+}
+.toprow{
+    background-color: rgb(20, 20, 92);
+    position:relative;
+    width: 86.1%;
+    left:0;
+    color: white;
+    text-align: center;
+    pointer-events: none;
+}
+.b {
+    width: 7.18%;
+    height: 5rem;
+    font-size: 12px;
+    background-color: rgb(70, 185, 252);
+    pointer-events: none;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clusterestimation</title>
+    <link href="{{ url_for('static', filename='style12.css') }}" rel="stylesheet">
+</head>
+<body>
+    <form class="form" style="max-width: 100%; width: 100%;"> 
+        <div class="main">  
+            <div class="firstspace">
+                
+                <input type="text" class="rowclass" value="Rough Calculation">   
+                <div class="formcontainer">
+                    <div class="onec">
+                        <input type="text" value="User Inputs" class="tr">
+                        <div class="fc">
+                            <input type="text" class="toshow"  value="Replication Factor"><input name="sum" value="" id="rep_fac"    class="vc inputclass">
+                        </div>
+                        <div class="fc">
+                            <input type="text" class="toshow"  value="Intermediate Data"><input name="sum" value="" id="int_data"  class="vc inputclass">
+                        </div>
+                        <div class="fc">
+                            <input type="text" class="toshow"  value="Available disk size for storage (TB)"><input name="sum" value="" id ="av_disk"  class="vc inputclass">
+                        </div>
+                    </div>
+                    <div class="twoc mar">
+                        <input type="text" value="Inputs Derived from Data Size Estimation" class="tr">
+                        <div class="fc">
+                            <input type="text" class="toshow" value="Total Existing Data Size (TB)"><input name="sum" value="" id="tot_exi"class="vc">
+                        </div>
+                    </div>
+                    <div class="threec mar">
+                        <input type="text" value="Calculation" class="tr">
+                        <div class="fc">
+                            <input type="text" class="toshow" value="Total Storage requirement (TB)"><input name="sum" value="" id="tot_stor_req"class="vc">
+                        </div>
+                        <div class="fc">
+                            <input type="text" class="toshow" value="Total number of required data nodes (approx.)"><input name="sum" value="" id="totalnumber" class="vc">
+                        </div>
+                    </div>
+                </div>
+                <input type="text" class="rowclass mt" value="Actual Calculation">
+                <div class="formcontainer">
+                    <div class="onec">
+                        <input type="text" value="User Inputs" class="tr">
+                        <div class="fc">
+                            <input type="text" class="toshow" value="Disk space utilization"><input name="sum" value="" id="disk_space_util" class="vc inputclass">
+                        </div>
+                        <div class="fc">
+                            <input type="text" class="toshow" value="Compression ratio"><input name="sum" value="" id="Compression_ratio" class="vc inputclass">
+                        </div>
+                    </div>
+                    <div class="threec martm">
+                        <input type="text" value="Calculation" class="tr">
+                        <div class="fc">
+                            <input type="text" class="toshow" value="Total Storage requirement (TB)"><input name="sum" value="" id="Total_Storage_requirement" class="vc">
+                        </div>
+                        <div class="fc">
+                            <input type="text" class="toshow" value="Available disk size for storage (TB)"><input name="sum" value="" id="Available_disk_size_for_storage" class="vc">
+                        </div>
+                        <div class="fc">
+                            <input type="text" class="toshow" value="Total number of required data nodes (approx.)"><input name="sum" value="" class="vc" id="Total_number_of_required_data_nodes">
+                        </div>
+                        <div class="fc">
+                            <input type="text" class="toshow" value="Actual usable cluster size (100 %) (TB)"><input name="sum" value="" id="Actual_usable_cluster_size" class="vc">
+                        </div>
+                    </div>
+                   
+                </div>
+                <input type="text" class="rowclass mt" value="Projection +1 Year ">
+                <div class="formcontainer">
+                    <div class="twoc tm">
+                        <input type="text" value="User Inputs" class="tr">
+                        <div class="fc bs">
+                            <input type="text" class="toshow" value="Overall Average Estimated % Quaterly Volume Incremental"><input name="sum" value=" " class="vc" id="Overall_Average_Estimated">
+                        </div>
+                    </div>
+                    
+                    <div class="threec mar ">
+                        <input type="text" value="User Inputs" class="tr">
+                        <div class="fc">
+                            <input type="text" class="toshowshort" value="1st Quarter"><input name="sum" value="" class="vc" id="1st_Quarter_1"><input name="sum" value="" class="vc" id="1st_Quarter_2">
+                        </div>
+                        <div class="fc">
+                            <input type="text" class="toshowshort" value="2nd  Quarter"><input name="sum" value="" class="vc" id="2nd_Quarter_1"><input name="sum" value="" class="vc" id="2nd_Quarter_2">
+                        </div>
+                        <div class="fc">
+                            <input type="text" class="toshowshort" value="3rd Quarter"><input name="sum" value="" class="vc" id="3rd_Quarter_1"><input name="sum" value="" class="vc" id="3rd_Quarter_2">
+                        </div>
+                        <div class="fc">
+                            <input type="text" class="toshowshort" value="4th Quarter"><input name="sum" value="" class="vc" id="4th_Quarter_1"><input name="sum" value="" class="vc" id="4th_Quarter_2">
+                        </div>
+                    </div>   
+                </div>
+              </div>
+            </div>   
+            </form> 
+
+
+            <script src="{{ url_for('static', filename='estimation.js') }}" ></script>
+            <script src="{{ url_for('static', filename='ij.js') }}" ></script>
+</body>
+</html>

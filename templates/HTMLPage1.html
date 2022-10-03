@@ -1,0 +1,93 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="{{ url_for('static', filename='abc.css') }}" rel="stylesheet">
+    <link rel = "stylesheet" 
+    href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity = "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin = "anonymous">
+   
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a  class="navba" href="#"> <b>De-Accelerator</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a href="{{ url_for('indexpage') }} ">Home</a>
+
+          </form>
+        </div>
+      </nav>
+
+
+
+
+<br><br>
+    <div class="fullcontainer">
+    <div class="maincontainer">
+        <form method='post' action='http://localhost:5000/form1'>
+            <div class="firstcontainer">
+                <input type="text" class="toshow" value="Existing Data Size">
+            <input name="sum" id="sumconatiner" value={{sum}} ><br>
+        </div>
+
+        <div class="secondcontainern">
+            <input type="text" class="toshow" value="Overall Average Estimated % Quaterly Volume">
+            <input  name="sum0" id="overall" value={{sum0}}>
+
+        </div>
+        <div class="thirdcontainer">
+            <input type="text" class="toshow" value="Incremental">
+            <input id="givenper">
+            <input id="storedper"><br>
+            
+
+        </div>
+        <button class = "btn btn-primary" type='submit'></button>
+        <button   class = "btn btn-primary" type="button" onclick="myfunction()">Calculate</button>
+        </form>
+        
+
+      </div>
+    
+      <div class="boxcontainer">
+          <button  class="bot" onclick="addRows()">Add New Column </button>
+    
+      </div>
+    </div>  
+    <div class="secondcontainer">
+        <input type="text"  class="toprow" value="Existing System Analysis"  >
+    </div>
+    <div class="allheadings">
+        <input value="Object ID"class="b"><input value="System Name"class="b"><input value="Schema Name"class="b"><input value="Database Name"class="b"><input value="Object/Table Name"class="b"><input value="No. of Columns"class="b"><input value="Record Count"class="b"><input value="Partition Column"class="b"><input value="Primary Index Column"class="b"><input value="Secondary Index Column"class="b"><input value="Table Size (GB)"class="b"><input value="Average Estimated Growth(%) Volume Quaterly"class="b">
+    </div>
+    <form action = "http://localhost:5000/form" method="POST">
+        <div class="newColumn">
+            <input name="sen1[]"class="inputbox"><input name="sen2[]"class="inputbox"><input name="sen3[]"class="inputbox"><input name="sen4[]"class="inputbox"><input name="sen5[]"class="inputbox"><input name="sen6[]"class="inputbox"><input name="sen7[]"class="inputbox"><input name="sen8[]"class="inputbox"><input name="sen9[]"class="inputbox"><input name="sen10[]"class="inputbox"><input name="sen11[]"class="inputbox"><input name="sen12[]"class="inputbox">
+        </div>
+        <br><br><br>
+        <div class="bhh"><button class = "btn btn-primary" onclick="doff()" type="submit" value="Submit"><a href="{{ url_for('clusterestimation') }} " class="btn btn-dark">Submit</a></button>
+        <button class = "btn btn-primary" onclick="def()" type="button"> Calculate</button>    </div>
+    </form>
+    
+
+    <script src="{{ url_for('static', filename='ij.js') }}" ></script>
+    <script src="{{ url_for('static', filename='estimation.js') }}" ></script>
+       
+</body>
+</html>
+
+
+
+
